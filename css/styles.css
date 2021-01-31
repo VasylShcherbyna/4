@@ -116,13 +116,11 @@ body {
 .link-mail {
   display: block;
 }
-.link-mail:hover,
-.link-mail:focus {
-  color: var(--color-focus);
+.icon-mail {
+  fill: currentColor;
 }
-.link-mail:hover .icon-mail,
-.link-mail:focus .icon-mail {
-  fill: var(--color-focus);
+.icon-tel {
+  fill: currentColor;
 }
 
 .list-contakty {
@@ -130,7 +128,9 @@ body {
   margin-left: auto;
 }
 .list-contakty .link-main {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .list-contakty .list-mail {
   display: block;
@@ -181,15 +181,13 @@ body {
   text-transform: uppercase;
 }
 .container-button {
-  max-width: 1600px;
-  margin: 0;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url(../img/overlay.jpg);
-  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   flex-grow: 1;
   padding: 200px 0;
   text-align: center;
